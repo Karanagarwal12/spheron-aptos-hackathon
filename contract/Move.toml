@@ -1,0 +1,12 @@
+[package]
+name = "ticket"
+version = "1.0.0"
+authors = []
+
+[addresses]
+MyAddr = "0x75f726b3883c82977b3963497ebb9da973f8d537200bb524115cb43531260f83"
+
+[dependencies]
+AptosFramework = { git = "https://github.com/aptos-labs/aptos-core.git", rev = "mainnet", subdir = "aptos-move/framework/aptos-framework" }
+
+[dev-dependencies]

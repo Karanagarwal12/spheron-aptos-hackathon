@@ -1,0 +1,47 @@
+.posts-container {
+  z-index: 99;
+  position: absolute;
+  top: 10vw;
+  left: 10vw;
+  width: 90vw;
+  height: 40vw;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 4vw;
+  padding-bottom: 5vw;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  & > .post {
+    height: 18vw;
+    width: 80vw;
+    display: flex;
+    background-color: #000;
+    border-radius: 1vw;
+    border: 2px solid #aaaaaa;
+    box-shadow: 0px 0px 10px #fff;
+    position: relative;
+    img {
+      border-top-left-radius: 1vw;
+      border-bottom-left-radius: 1vw;
+    }
+    .details {
+      padding: 1vw;
+      h2 {
+        font-size: 2vw;
+      }
+      .bookNow{
+        background-color: #a200ff;
+        font-size: 1.5vw;
+        border-radius: 1vw;
+        padding: 0.5vw 1vw;
+        width: fit-content;
+        position: absolute;
+        bottom: 1.5vw;
+        right: 1.5vw;
+      }
+    }
+  }
+}
